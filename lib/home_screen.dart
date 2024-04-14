@@ -118,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
             onCameraIdle: _manager.updateMap),
         floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
         floatingActionButton: FloatingActionButton(
-          onPressed: () async   {
+          onPressed: () async {
             final GoogleMapController controller = await _controller.future;
             controller.animateCamera(
               CameraUpdate.newLatLngZoom(_parisCameraPosition.target, 8.0),
